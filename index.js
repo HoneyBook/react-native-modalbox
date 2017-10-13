@@ -37,28 +37,6 @@ var styles = StyleSheet.create({
 
 var ModalBox = React.createClass({
 
-  propTypes: {
-    isOpen: React.PropTypes.bool,
-    isDisabled: React.PropTypes.bool,
-    startOpen: React.PropTypes.bool,
-    backdropPressToClose: React.PropTypes.bool,
-    swipeToClose: React.PropTypes.bool,
-    swipeThreshold: React.PropTypes.number,
-    swipeArea: React.PropTypes.number,
-    position: React.PropTypes.string,
-    entry: React.PropTypes.string,
-    backdrop: React.PropTypes.bool,
-    backdropOpacity: React.PropTypes.number,
-    backdropColor: React.PropTypes.string,
-    backdropContent: React.PropTypes.element,
-    animationDuration: React.PropTypes.number,
-    backButtonClose: React.PropTypes.bool,
-
-    onClosed: React.PropTypes.func,
-    onOpened: React.PropTypes.func,
-    onClosingState: React.PropTypes.func,
-  },
-
   getDefaultProps: function () {
     return {
       startOpen: false,
